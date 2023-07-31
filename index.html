@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ToDo List</title>
+  
+  <!-- HTML -->
+  
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section id="main-page">
+    <div class="todo-container">
+      <div class="main">
+        <div class="top">
+          <h1>ToDo List</h1>
+          <div class="form">
+            <div class="input-flex">
+              <input class="todo-input" type="text" placeholder="Type Title ">
+              <input class="todo-input2" type="text" placeholder="Write details"> 
+            </div>
+            <button class="submit-btn">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <ul class="unorder-list">
+          
+          <!-- <li class="list">
+            <div class="message">
+              <h4 class="todo-title">Hello</h4>
+              <p class="todo-details">welcome in web</p>
+            </div>
+            <div class="btns">
+              <button class="delete-btn" type="submit">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+              <button class="edit-btn" type="submit" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </button>
+            </div>
+          </li> -->
+          
+        </ul>
+      </div>
+    </div>
+    <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Animated Modal</button> -->
+    
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <header class="w3-container w3-teal"> 
+          <span onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2>edit ToDo</h2>
+        </header>
+        <div class="editForm">
+          <input class="editInput" type="text" placeholder="Type Title">
+          <input class="editInput2" type="text" placeholder="Write">
+          <button class="editBtn" type="submit">Submit</button>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Project -->
+  <script src="js/all.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
